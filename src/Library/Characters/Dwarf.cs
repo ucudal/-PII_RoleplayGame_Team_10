@@ -15,7 +15,7 @@ namespace RolePlay
 
 
 
-        public Dwarf(string name,int damage, int health)
+        public Dwarf(string name, int health, int damage)
         {
             this.Name = name;
             this.Health = health;
