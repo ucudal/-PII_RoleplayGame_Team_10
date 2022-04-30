@@ -52,7 +52,18 @@ namespace RolePlay
             wizard.Health = wizard.TotalDefense() - dwarf.TotalDamage();
         }
 
-        
+        public void Total_Health_Wizard(Wizard wizard)
+        {
+            wizard.Health=100;
+        }
+        public void Total_Health_Elf(Elf elf)
+        {
+            elf.Health=100;
+        }
+        public void Total_Health_Dwarf(Dwarf dwarf)
+        {
+            dwarf.Health=100;
+        }
 
         
 

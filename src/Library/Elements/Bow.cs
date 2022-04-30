@@ -1,6 +1,6 @@
 using System;
 
-namespace Roleplay
+namespace RolePlay
 {
     public class Bow
     {
