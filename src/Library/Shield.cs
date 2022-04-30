@@ -5,6 +5,7 @@ namespace RolePlay
     public class Shield
     {
         private string name;
+
         private int defense = 100;
         
         public string Name
@@ -30,5 +31,6 @@ namespace RolePlay
         {
             this.Name = name;
         }
+
     }    
 }

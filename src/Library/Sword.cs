@@ -5,6 +5,7 @@ namespace RolePlay
     public class Sword
     {
         private string name;
+
         private int damage = 100;
         
         public string Name

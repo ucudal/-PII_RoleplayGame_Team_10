@@ -11,63 +11,89 @@ namespace RolePlay
 
         private int damage;
 
-       // private Book book;
+        private Book book;
+
+        private BreastPlate Pechera{get;set;}
+
+        private Sword espada {get;set;}
+
+        private Shield escudo {get;set;}
+
+        private Helmet casco {get;set;}
+
+        
 
 
-        public Wizard(string name, int id, int health, int damage){
-            
-            this.Name=name;
-            this.Damage=damage;
-            this.Id=id;
-            this.Health=health;
+
+
+        public Wizard(string name, int id, int health, int damage)
+        {
+
+            this.Name = name;
+            this.Damage = damage;
+            this.Id = id;
+            this.Health = health;
 
         }
 
-       /* public Book Book{
-            get{
-                return Book;
-            }
-            set{
-                this.book=value;
-            }
-        }*/
-        public string Name{
-            get{
+         public Book Book{
+             get{
+                 return Book;
+             }
+             set{
+                 this.book=value;
+             }
+         }
+        public string Name
+        {
+            get
+            {
                 return name;
             }
-            set{
-                this.name=value;
+            set
+            {
+                this.name = value;
             }
         }
 
-        public int Id{
-            get{
+        public int Id
+        {
+            get
+            {
                 return id;
             }
-            set{
-                this.id=value;
+            set
+            {
+                this.id = value;
             }
         }
-        public int Health{
-            get{
+        public int Health
+        {
+            get
+            {
                 return health;
             }
-            set{
-                this.health=value;
+            set
+            {
+                this.health = value;
             }
         }
-        public int Damage{
-            get{
+        public int Damage
+        {
+            get
+            {
                 return damage;
             }
-            set{
-                this.damage=value;
+            set
+            {
+                this.damage = value;
             }
         }
 
-      /*  public void AddBook(Book book){
-            this.Book=book;
-        }*/
+         public void AddBook(Book book){
+              this.Book=book;
+         }
+
 
     }
 }

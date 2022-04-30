@@ -6,6 +6,7 @@ namespace RolePlay
     {
         private string name;
         private int defense;
+
         
         public Helmet(string name, int defense)
         {
@@ -34,5 +35,6 @@ namespace RolePlay
                 this.defense=value;
             }
         }
+
     }    
 }
