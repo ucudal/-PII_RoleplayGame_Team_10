@@ -2,17 +2,16 @@ using System;
 
 namespace RolePlay
 {
-    public class BreastPlate
+    public class Helmet
     {
         private string name;
         private int defense;
         
-        public BreastPlate(string name, int defense)
+        public Helmet(string name, int defense)
         {
             this.Name = name;
             this.Defense = defense;
         }
-        
         public string Name
         {   
             get
@@ -35,5 +34,5 @@ namespace RolePlay
                 this.defense=value;
             }
         }
-    }
+    }    
 }
