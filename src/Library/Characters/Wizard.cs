@@ -94,6 +94,16 @@ namespace RolePlay
             return total;
         }
 
+        public void AddElement(dynamic element)
+        {
+            element.Add(element);
+        }
+
+        public void RemoveElement(dynamic element)
+        {
+            element.Remove(element);
+        }
+
 
 
     }
