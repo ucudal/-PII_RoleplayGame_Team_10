@@ -2,7 +2,7 @@ using System;
 
 namespace RolePlay
 {
-    public class breastPlace
+    public class BreastPlate
     {
         private string name;
         private int defense;

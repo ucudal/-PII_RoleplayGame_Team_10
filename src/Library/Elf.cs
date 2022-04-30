@@ -11,6 +11,14 @@ namespace RolePlay
 
         private int damage;
 
+        private BreastPlate Pechera{get;set;}
+
+        private Sword espada {get;set;}
+
+        private Shield escudo {get;set;}
+
+        private Helmet casco {get;set;}
+
 
 
         public Elf(string name, int id, int health, int damage){
@@ -56,6 +64,23 @@ namespace RolePlay
                 this.damage=value;
             }
         }
+
+        public void HealthELf(Elf elf)
+        {
+            elf.Health += 50;
+        }
+
+        public void HealthWizard(Wizard wizard)
+        {
+            wizard.Health += 50;
+        }
+
+        public void HealthDwarf(Dwarf dwarf)
+        {
+            dwarf.Health += 50;
+        }
+
+
 
 
     }
