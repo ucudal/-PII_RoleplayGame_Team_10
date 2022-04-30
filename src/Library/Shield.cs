@@ -2,7 +2,7 @@ using System;
 
 namespace RolePlay
 {
-    public class Escudo
+    public class Sword
     {
         private string name;
         private int defense;
