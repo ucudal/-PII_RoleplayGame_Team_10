@@ -2,10 +2,13 @@ using System;
 
 namespace RolePlay
 {
-    public class Shotgun
+    public class Sword
     {
         private string name;
+
         private int damage = 100;
+
+        private int health = 0;
         
         public string Name
         {
@@ -27,7 +30,7 @@ namespace RolePlay
             }
         }
 
-        public Shotgun(string name)
+        public Sword(string name)
         {
             this.Name = name;
         }
