@@ -5,20 +5,21 @@ namespace RolePlay
 {
     public class Book
     {
-        private string name;
+        private string Name {get;set;}
         private List<Spell> spells = new List<Spell>();
 
-        public void addSpell()
+        public void addSpell(Spell spellNuevo)
         {
-            
+            spells.Add(spellNuevo);
         }
-        public void changeSpell()
+        public void removeSpell(Spell spellViejo)
         {
-            
+            spells.Remove(spellViejo);
         }
-        public void removeSpell()
+
+        public Book(string name)
         {
-            
+            this.Name = name;
         }
     }    
 }
