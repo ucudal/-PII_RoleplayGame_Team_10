@@ -1,6 +1,8 @@
 ﻿using System;
 
-namespace Library
+
+namespace RolePlay
+
 {
     class Program
     {
