@@ -9,7 +9,7 @@ namespace RolePlay
 
         public void Wizard_Atack_Wizard(Wizard wizard1, Wizard wizard2)
         {
-
+            wizard2.Health = wizard2.TotalDefense() - wizard1.TotalDamage(); 
         }
 
         public void Wizard_Atack_Elf(Wizard wizard1, Elf elf)
@@ -51,6 +51,8 @@ namespace RolePlay
         {
 
         }
+
+        
 
 
 

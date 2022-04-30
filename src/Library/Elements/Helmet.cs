@@ -5,7 +5,6 @@ namespace RolePlay
     public class Helmet
     {
         private string name;
-        private int defense = 100;
 
         private int health = 100;
 
