@@ -2,11 +2,12 @@ using System;
 
 namespace RolePlay
 {
-    public class Spell
+    public class InfinityGems
     {
-        private string name {get;set;}
-        private int defense {get;set;}
-        private int damage {get;set;}
+
+        private string name;
+        private int damage = 100;
+        private int defense = 100;
 
         public string Name
         {
@@ -14,7 +15,7 @@ namespace RolePlay
             {
                 this.name = value;
             }
-            get
+            get 
             {
                 return this.name;
             }
@@ -34,11 +35,9 @@ namespace RolePlay
                 return this.defense;
             }
         }
-        public Spell (string name, int defense, int damage)
+        public InfinityGems(string name)
         {
-            this.name = name;
-            this.defense = defense;
-            this.damage = damage;
+            this.Name = name;
         }
     }    
 }
