@@ -1,11 +1,11 @@
 using System;
+using System.Collections.Generic;
 
 namespace RolePlay
 {
     public class Wizard
     {
         private string name;
-        private int id;
 
         private int health;
 
@@ -13,37 +13,28 @@ namespace RolePlay
 
         private Book book;
 
-        private BreastPlate Pechera{get;set;}
+        private List<dynamic> elements = new List<dynamic>();
 
-        private Sword espada {get;set;}
-
-        private Shield escudo {get;set;}
-
-        private Helmet casco {get;set;}
-
-        
-
-
-
-
-        public Wizard(string name, int id, int health, int damage)
+        public Wizard(string name, int health, int damage)
         {
 
             this.Name = name;
             this.Damage = damage;
-            this.Id = id;
             this.Health = health;
 
         }
 
-         public Book Book{
-             get{
-                 return Book;
-             }
-             set{
-                 this.book=value;
-             }
-         }
+        public Book Book
+        {
+            get
+            {
+                return Book;
+            }
+            set
+            {
+                this.book = value;
+            }
+        }
         public string Name
         {
             get
@@ -56,17 +47,6 @@ namespace RolePlay
             }
         }
 
-        public int Id
-        {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                this.id = value;
-            }
-        }
         public int Health
         {
             get
@@ -90,9 +70,30 @@ namespace RolePlay
             }
         }
 
-         public void AddBook(Book book){
-              this.Book=book;
-         }
+        public void AddBook(Book book)
+        {
+            this.Book = book;
+        }
+
+        public int TotalDamage(){
+             int total = this.Damage;
+             foreach (dynamic item in elements)
+             {
+                total += item.damage;
+             }
+            
+            return total;
+        }
+        public int TotalDefense(){
+             
+             int total = this.health;
+             foreach (dynamic item in elements)
+             {
+                total += item.health;
+             }
+            return total;
+        }
+
 
 
     }

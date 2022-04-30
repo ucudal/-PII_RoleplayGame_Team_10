@@ -1,14 +1,20 @@
 using System;
 
-namespace RolePlay
+namespace Roleplay
 {
-    public class Sword
+    public class Knife
     {
+        private int damage = 100;
         private string name;
 
-        private int damage = 100;
-        
-        public string Name
+        private int health = 0;
+
+        public Knife(string knifeName)
+        {
+            this.name = knifeName;
+        }
+
+         public string Name
         {
             set
             {
@@ -19,7 +25,6 @@ namespace RolePlay
                 return this.name;
             }
         }
-
         public int Damage
         {
             get 
@@ -28,9 +33,12 @@ namespace RolePlay
             }
         }
 
-        public Sword(string name)
+        public int Health
         {
-            this.Name = name;
+            get 
+            {
+                return this.health;
+            }
         }
-    }    
+    }
 }

@@ -2,12 +2,13 @@ using System;
 
 namespace RolePlay
 {
-    public class Shield
+    public class InfinityGems
     {
-        private string name;
 
-        private int defense = 100;
-        
+        private string name;
+        private int damage = 100;
+        private int health = 100;
+
         public string Name
         {
             set
@@ -19,18 +20,24 @@ namespace RolePlay
                 return this.name;
             }
         }
-
-        public int Defense
+        public int Damage
         {
             get 
             {
-                return this.defense;
+                return this.damage;
             }
         }
-        public Shield(string name)
+
+        public int Health
+        {
+            get 
+            {
+                return this.health;
+            }
+        }
+        public InfinityGems(string name)
         {
             this.Name = name;
         }
-
     }    
 }
