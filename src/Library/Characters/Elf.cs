@@ -100,12 +100,12 @@ namespace RolePlay
 
         public void AddElement(dynamic element)
         {
-            element.Add(element);
+            elements.Add(element);
         }
 
         public void RemoveElement(dynamic element)
         {
-            element.Remove(element);
+            elements.Remove(element);
         }
 
 

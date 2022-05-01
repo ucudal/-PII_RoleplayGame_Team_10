@@ -8,7 +8,7 @@ namespace RolePlay
 
         private int health = 100;
 
-        private int damage;
+        private int damage = 0;
         
         public string Name
         {
