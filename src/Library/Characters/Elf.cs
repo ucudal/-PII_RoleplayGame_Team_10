@@ -13,12 +13,6 @@ namespace RolePlay
 
         private List<dynamic> elements = new List<dynamic>();
 
-
-
-
-
-
-
         public Elf(string name, int health, int damage)
         {
 
@@ -90,7 +84,7 @@ namespace RolePlay
         }
         public int TotalDefense(){
              
-             int total = this.health;
+             int total = this.Health;
              foreach (dynamic item in elements)
              {
                 total += item.Health;
@@ -100,12 +94,12 @@ namespace RolePlay
 
         public void AddElement(dynamic element)
         {
-            element.Add(element);
+            elements.Add(element);
         }
 
         public void RemoveElement(dynamic element)
         {
-            element.Remove(element);
+            elements.Remove(element);
         }
 
 
