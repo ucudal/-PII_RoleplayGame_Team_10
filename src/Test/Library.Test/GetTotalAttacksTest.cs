@@ -4,12 +4,8 @@ using System.Collections.Generic;
 
 namespace Test.Library
 {
-
-
-    public class GetTotalAttacks
-
+    public class GetTotalAttacksTest
     {
-
         Bow arco = new Bow("arco");
         BreastPlate pechera = new BreastPlate("pechera");
         Helmet casco = new Helmet("casco");
@@ -68,6 +64,4 @@ namespace Test.Library
             Assert.AreEqual(totalDamage,mago.TotalDamage());
         }
     }
-
-
 }

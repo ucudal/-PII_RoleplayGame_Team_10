@@ -4,7 +4,7 @@ using RolePlay;
 
 namespace Test.Library
 {
-    public class GetTotalDefense
+    public class GetTotalDefenseTest
     {
         [Test]
         public void DwarfDefense()
