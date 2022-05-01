@@ -72,7 +72,7 @@ namespace RolePlay
         }
         public int TotalDefense(){
              
-             int total = this.health;
+             int total = this.Health;
              foreach (dynamic item in elements)
              {
                 total += item.Health;

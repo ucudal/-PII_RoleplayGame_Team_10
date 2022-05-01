@@ -13,12 +13,6 @@ namespace RolePlay
 
         private List<dynamic> elements = new List<dynamic>();
 
-
-
-
-
-
-
         public Elf(string name, int health, int damage)
         {
 
@@ -83,17 +77,17 @@ namespace RolePlay
              int total = this.Damage;
              foreach (dynamic item in elements)
              {
-                total += item.damage;
+                total += item.Damage;
              }
             
             return total;
         }
         public int TotalDefense(){
              
-             int total = this.health;
+             int total = this.Health;
              foreach (dynamic item in elements)
              {
-                total += item.health;
+                total += item.Health;
              }
             return total;
         }
