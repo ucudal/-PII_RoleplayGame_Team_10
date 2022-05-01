@@ -58,21 +58,6 @@ namespace RolePlay
             }
         }
 
-        public void HealthELf(Elf elf)
-        {
-            elf.Health += 50;
-        }
-
-        public void HealthWizard(Wizard wizard)
-        {
-            wizard.Health += 50;
-        }
-
-        public void HealthDwarf(Dwarf dwarf)
-        {
-            dwarf.Health += 50;
-        }
-
         public int TotalDamage(){
              int total = this.Damage;
              foreach (dynamic item in elements)
