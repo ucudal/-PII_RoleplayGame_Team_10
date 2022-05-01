@@ -1,22 +1,24 @@
 using System;
 
+
 namespace RolePlay
 {
     public class Sword
     {
+
         private string name;
 
         private int damage = 100;
 
         private int health = 0;
-        
+
         public string Name
         {
             set
             {
                 this.name = value;
             }
-            get 
+            get
             {
                 return this.name;
             }
@@ -24,7 +26,7 @@ namespace RolePlay
 
         public int Damage
         {
-            get 
+            get
             {
                 return this.damage;
             }
@@ -34,5 +36,5 @@ namespace RolePlay
         {
             this.Name = name;
         }
-    }    
+    }
 }

@@ -89,8 +89,5 @@ namespace RolePlay
         {
             elements.Remove(element);
         }
-
-
-
     }
 }
