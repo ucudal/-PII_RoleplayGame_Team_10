@@ -65,7 +65,7 @@ namespace RolePlay
              int total = this.Damage;
              foreach (dynamic item in elements)
              {
-                total += item.damage;
+                total += item.Damage;
              }
             
             return total;
@@ -75,7 +75,7 @@ namespace RolePlay
              int total = this.health;
              foreach (dynamic item in elements)
              {
-                total += item.health;
+                total += item.Health;
              }
             return total;
         }
